@@ -1,0 +1,363 @@
+@import url("//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+@import url("//fonts.googleapis.com/css?family=Oswald:400,300");
+
+
+iframe {
+  padding-top:20px;
+  padding-left: 20px;
+}
+
+.myimg {
+  height: 150px;
+  width: 150px;
+}
+
+p {
+  text-indent: 50px;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar-default {
+  background-color: #1693A5;
+  border-color: #1693A5;
+}
+.navbar-default .navbar-brand {
+  color: #C7EDE8;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #C7EDE8;
+}
+.navbar-default .navbar-text {
+  color: #C7EDE8;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #C7EDE8;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #C7EDE8;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #C7EDE8;
+  background-color: #45B5C4;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #C7EDE8;
+  background-color: #1693A5;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1693A5;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #1693A5;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #C7EDE8;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #C7EDE8;
+}
+.navbar-default .navbar-link {
+  color: #C7EDE8;
+}
+.navbar-default .navbar-link:hover {
+  color: #C7EDE8;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #45B5C4;
+    color: #C7EDE8;
+}
+
+.jumbotron {
+  min-height: 250px;
+  background-color: #ffffff;
+  background-image:url(../assets/img/banner.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.jumbotron h1 {
+  text-shadow:0px 0px 10px #111;
+  color: #C7EDE8;
+}
+
+.jumbotron h3 {
+  text-shadow:0px 0px 10px #111;
+  color: #C7EDE8;
+}
+
+.jumbotron p {
+  text-shadow:0px 0px 10px #111;
+  color: #C7EDE8;
+}
+
+.jumbotron2 {
+  min-height: 250px;
+  background-color: #ffffff;
+  background-image:url(../assets/img/fsticon.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.jumbotron2 h1 {
+  text-shadow:0px 0px 10px #111;
+  color: #C7EDE8;
+}
+
+.jumbotron2 h3 {
+  text-shadow:0px 0px 10px #111;
+  color: #C7EDE8;
+}
+
+.jumbotron2 p {
+  text-shadow:0px 0px 10px #111;
+  color: #C7EDE8;
+}
+
+.other-background{
+  background-image:url(../assets/img/fsticon.jpg);
+}
+
+.page-header {
+  margin-top:0;
+}
+
+.panel-body {
+  padding-top:0;
+  background:#1693A5;
+}
+
+div.myteam {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featuredImg {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #C7EDE8;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #C7EDE8;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #C7EDE8;
+    background-color: #1693A5;
+  }
+}
+
+
+.panel {
+
+}
+
+body {
+  background:#C7EDE8
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.event-list {
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.event-list > li {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgb(51, 51, 51);
+  box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+  padding: 0px;
+  margin: 0px 0px 20px;
+}
+.event-list > li > time {
+  display: inline-block;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(22, 147, 165);
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.event-list > li:nth-child(even) > time {
+  background-color: rgb(69, 180, 256);
+}
+.event-list > li > time > span {
+  display: none;
+}
+.event-list > li > time > .day {
+  display: block;
+  font-size: 36pt;
+  font-weight: 100;
+  line-height: 1;
+}
+.event-list > li time > .month {
+  display: block;
+  font-size: 16pt;
+  font-weight: 900;
+  line-height: 1;
+}
+.event-list > li > img {
+  width: 100%;
+}
+.event-list > li > .info {
+  padding-top: 5px;
+  text-align: center;
+}
+.event-list > li > .info > .title {
+  font-size: 17pt;
+  font-weight: 700;
+  margin: 0px;
+  text-align: center;
+}
+.event-list > li > .info > .desc {
+  font-size: 13pt;
+  font-weight: 300;
+  margin: 0px;
+}
+.event-list > li > .info > ul,
+.event-list > li > .social > ul {
+  display: table;
+  list-style: none;
+  margin: 0px 0px 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+.event-list > li > .social > ul {
+  margin: 0px;
+}
+.event-list > li > .info > ul > li,
+.event-list > li > .social > ul > li {
+  display: table-cell;
+  cursor: pointer;
+  color: rgb(30, 30, 30);
+  font-size: 11pt;
+  font-weight: 300;
+  padding: 3px 0px;
+}
+.event-list > li > .info > ul > li > a {
+  display: block;
+  width: 100%;
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+} 
+.event-list > li > .social > ul > li {    
+  padding: 0px;
+}
+.event-list > li > .social > ul > li > a {
+  padding: 3px 0px;
+} 
+.event-list > li > .info > ul > li:hover,
+.event-list > li > .social > ul > li:hover {
+  color: rgb(30, 30, 30);
+  background-color: rgb(200, 200, 200);
+}
+.facebook a,
+.twitter a,
+.google-plus a {
+  display: block;
+  width: 100%;
+  color: rgb(75, 110, 168) !important;
+}
+.twitter a {
+  color: rgb(79, 213, 248) !important;
+}
+.google-plus a {
+  color: rgb(221, 75, 57) !important;
+}
+.facebook:hover a {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(75, 110, 168) !important;
+}
+.twitter:hover a {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(79, 213, 248) !important;
+}
+.google-plus:hover a {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(221, 75, 57) !important;
+}
+
+@media (min-width: 768px) {
+.event-list > li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding: 0px;
+}
+.event-list > li > time,
+.event-list > li > img  {
+  display: inline-block;
+}
+.event-list > li > time,
+.event-list > li > img {
+  width: 80px;
+  float: left;
+}
+.event-list > li > .info {
+  background-color: rgb(245, 245, 245);
+  overflow: hidden;
+}
+.event-list > li > time,
+.event-list > li > img {
+  width: 80px;
+  height: 80px;
+  padding: 0px;
+  margin: 0px;
+}
+.event-list > li > .info {
+  position: relative;
+  height: 80px;
+  text-align: left;
+  padding-right: 40px;
+} 
+.event-list > li > .info > .title, 
+.event-list > li > .info > .desc {
+  padding: 0px 10px;
+}
+.event-list > li > .info > ul {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.event-list > li > .social {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 40px;
+}
+
+.event-list > li > .social > ul {
+    border-left: 1px solid rgb(230, 230, 230);
+}
+
+.event-list > li > .social > ul > li {      
+  display: block;
+        padding: 0px;
+}
+
+.event-list > li > .social > ul > li > a {
+  display: block;
+  width: 40px;
+  padding: 10px 0px 9px;
+}

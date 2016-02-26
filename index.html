@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="assets/img/fsticon.jpg">
+		<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src = "js/bootstrap.js"></script>
+		<script type="text/javascript">
+		$(function() {
+		    $('#contact').submit(function() {
+		        $("#contact").modal("hide");
+		        $("#success").modal("show");
+		        window.alert('Message Sent!')
+		    });
+		});
+		</script>
+
+		<title>Food Science Technology @ UC Berkeley</title>
+		<meta name = "viewport" content = "width ==  device-width, initial-scale = 1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+
+	</head>
+	<body>
+		<!-- Header Navbar -->
+		<nav class = "navbar navbar-default navbar-static-top">
+			<div class = "container">
+				<a href = "index.html" class = "navbar-brand">FST</a>
+
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+				</button>
+
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-right">
+						<li class = "active"><a href = "#">Home</a></li>
+						<li><a href = "events.html">Events</a></li>
+						<li><a href = "officers.html">Who Are We?</a></li>
+						<li><a href = "#contact" data-toggle = "modal">Contact</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Jumbotron/Major content area -->
+		<div class = "container hidden-xs hidden-sm" id = "jumbotron">
+			<div class = "jumbotron text-center">
+			</div>
+		</div>
+
+		<div class = "container show-xs show-sm hidden-md hidden-lg" id = "jumbotron2">
+			<div class = "jumbotron2 text-center other-background">
+				
+			</div>
+		</div>
+
+		<!-- Content Area -->
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-8">
+					<div class = "panel panel-info">
+						<div class = "panel-body">
+							<h2 align="center" style="color:white">About Us</h2>
+						</div>
+						<div class = "panel-footer">
+							<div align = "center" style = "font-size:150%" > Food Science and Tech at Cal aims to bring together students at UC Berkeley who share a passion for food science and related technologies. We are the first and only food science organization on campus, and work closely with the College of Chemistry and Department of Nutritional Sciences to educate about food related issues. </div>
+							<br>
+							<div align = "center" style = "font-size:150%"> During the year we bring in guest speakers and go on factory tours to provide a real-world look into the food industry, conduct student-led research through the College of Chemistry, hold educational workshops to teach about food science concepts, and work together to develop innovative food ideas for competition. </div>
+							<br>
+							<div align = "center" style = "font-size:150%"> Our club is open to all UC Berkeley students of any major. Feel free to email us at fstatcal@gmail.com or just drop by any of our meetings. </div>
+							<br>
+							<div align = "center">
+								<a href = "https://www.facebook.com/groups/806853009409574/" align = "center" class = "btn btn-primary" >Join us on Facebook!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class = "col-md-4">
+					<div class = "panel-body">
+						<h2 align = "center" style = "color:white"> Upcoming Events </h1>
+					</div>
+					<div class = "panel-footer">
+						<ul class="event-list">
+
+							
+
+							<li>
+								<time datetime="2015-09-08 0000">
+									<span class="day">23</span>
+									<span class="month">Feb</span>
+									<span class="year">2016</span>
+									<span class="time">6:00 PM</span>
+								</time>
+								<div class="info">
+
+									<h2 class="title" align = "center">Tigerlily Social</h2>
+
+								</div>
+								<br><br>
+							</li>
+
+							
+							
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<br><br><br>
+
+		<!-- Fixed footer -->
+		<nav class = "navbar navbar-default navbar-bottom">
+
+			<div class = "container">
+				<p class = "navbar-text pull-left">Site built by William Zhuang. We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p>
+				<a href="https://www.ocf.berkeley.edu/">
+				<img align = "right" src="https://www.ocf.berkeley.edu/images/hosted-logos/ocfbadge_mini8.png" alt="Hosted by the OCF" width="98" height="39" style="border:0" />
+				</a>
+			</div>
+
+		</nav>
+
+		<!-- Modal Contact Module-->
+		<div class = "modal fade" id = "contact" role = "dialog">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<div class = "modal-header">
+						<h4>Contact Us!</h4>
+					</div>
+					<form class = "form-horizontal" id = "contact" action = "thankyou.php" method = "post">
+					<div class = "modal-body">
+						<div class = "form-group">
+							<label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+							<div class = "col-lg-10">
+
+								<input type = "text" class = "form-control" name = "name" id = "contact-name" placeholder = "Full Name">
+							</div>
+						</div>
+
+						<div class = "form-group">
+							<label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+							<div class = "col-lg-10">
+
+								<input type = "email" class = "form-control" name = "email" id = "contact-email" placeholder = "you@example.com">
+							</div>
+						</div>
+
+						<div class = "form-group">
+							<label for = "contact-message" class = "col-lg-2 control-label">Message:</label>
+							<div class = "col-lg-10">
+
+								<textarea class = "form-control" name = "message" rows = "8"></textarea>
+							</div>
+						</div>
+
+					</div>
+
+					<div class = "modal-footer">
+
+						<a class = "btn btn-default" data-dismiss = "modal">Close</a>
+						<button class = "btn btn-primary" type = "submit">Send</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Success Module -->
+		<div class = "modal fade" id = "success" role = "dialog">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<div class = "modal-header">
+						<h4>Email successfully sent!</h4>
+					</div>
+
+					<div class = "modal-footer">
+						<a class = "btn btn-default" data-dismiss = "modal">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</body>
+</html>
